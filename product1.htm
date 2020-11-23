@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+.full-screen{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.5);
+	z-index:10;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	}
+	p{
+		color:purple;
+		margin:5px;
+		cursor:pointer;
+	}
+	p:hover{
+		background:yellow;
+	}
+</style>
+</head>
+<body>
+<p>商品說明</p>
+<div class="full-screen" align="center">
+<h1>全自動掃地機器人OuO</h1>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZm3x4DdXF5OiiKoEgvTJVPdtdhRqLRjuHhw&usqp=CAU"width="750"height="500">
+<center><br>看心情打滾，順便吸塵，但會製造飛揚的毛毛，清潔度僅有兩顆星。</br>
+</div>
+<script>
+$("p").click(function(){
+	$(".full-screen").slideToggle();
+});
+$("img").click(function(){
+	$(".full-screen").slideToggle();
+});
+</script>
+</body>
+</html>
